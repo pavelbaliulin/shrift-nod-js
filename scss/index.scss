@@ -1,0 +1,31 @@
+@mixin shrift($cl, $fz, $ss, $ps, $huy, $dblr4uk, $fs, $fw, $tt, $va) {
+  color: $cl;
+  font-size: $fz / 2 + em;
+  font-family: $ss;
+  font-variant: $ps;
+  text-decoration: $huy;
+  letter-spacing: $dblr4uk;
+  font-style: $fs;
+  font-weight: $fw;
+  text-transform: $tt;
+  vertical-align: $va;
+}
+
+a {
+  @include shrift(
+    grey,
+    20,
+    Arial,
+    small-caps,
+    none,
+    35px,
+    italic,
+    bold,
+    uppercase,
+    sub
+  );
+}
+
+div {
+  color: white;
+}
